@@ -3,9 +3,6 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h2>Posts</h2>
-  <div class="container">
-    <app-post *ngFor="let post of posts" [post]="post"></app-post>
-  </div>
+  <app-post-list-component [posts]="posts"></app-post-list-component>
 </div>
 <router-outlet></router-outlet>
